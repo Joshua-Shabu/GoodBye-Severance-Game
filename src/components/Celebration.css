@@ -1,0 +1,235 @@
+.grid-wrapper {
+  background-color: rgb(16, 36, 58);
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 150px;
+  user-select: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(40, 30px);
+  grid-template-rows: repeat(20, 30px);
+  gap: 5px;
+  margin-bottom: auto;
+}
+
+.containers {
+  position: fixed;
+  bottom: -40px; /* Lower the bins partially off-screen */
+  display: flex;
+  gap: 20px;
+}
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(85, 120, 138);
+}
+
+.lid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(16, 36, 58);
+  transform-origin: top center;
+  transition: transform 0.3s ease;
+}
+
+.lid.open {
+  transform: rotate(45deg) scale(1.1);
+  transition: transform 0.5s ease-out;
+}
+
+.box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #444;
+  visibility: hidden;
+}
+
+.grid-item {
+  background-color: rgb(16, 36, 58);
+  display: flex;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  border-radius: 2px;
+  transition: transform 0.3s cubic-bezier(.25,.1,.25,1);
+}
+
+.message-letter {
+  color: lightskyblue;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: rgb(16, 36, 58);
+}
+
+.grid-item:hover {
+  background-color: rgb(16, 96, 119);
+  transform: scale(1.5);
+}
+.dragged-word {
+  position: fixed;
+  pointer-events: none;
+  display: flex;
+  gap: 5px;
+  user-select: none;
+  z-index: 100;
+  transition: transform 0.2s ease-out;
+}
+
+.dragged-letter {
+    position: absolute;
+    will-change: transform;
+    pointer-events: none;
+    color: lightskyblue;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    transition: transform 0.3s cubic-bezier(.25,.1,.25,1);
+  }
+/* Add to existing CSS */
+.dragged-letter:nth-child(even) {
+  transform: rotate(3deg);
+}
+.dragged-letter:nth-child(odd) {
+  transform: rotate(-3deg);
+}
+
+.stored-word {
+  color: lightskyblue;
+  font-size: 12px;
+  padding: 2px;
+  text-align: center;
+}
+
+.container {
+  /* Previous container styles */
+  overflow: hidden;
+}
+
+.box {
+  /* Previous box styles */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: 5px;
+  align-content: flex-start;
+}
+/* Add these to Celebration.css */
+.controls {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid lightskyblue;
+  color: lightskyblue;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.controls button:hover:not(:disabled) {
+  background: rgba(173, 216, 230, 0.2);
+}
+
+.glow {
+  filter: drop-shadow(0 0 8px lightskyblue);
+}
+
+.dragged-letter {
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.stored-word {
+  animation: pop-in 0.3s ease;
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add styles for the popup to make it more prominent and centered. */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000e1a;
+  border: 2px solid lightskyblue;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 0 10px lightskyblue;
+  text-align: center;
+  color: lightskyblue;
+  font-family: 'Press Start 2P', cursive; /* Retro font */
+}
+
+.popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  background-color: lightskyblue;
+  color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive; /* Retro font */
+}
+
+.popup-content button:hover {
+  background-color: black;
+  color: lightskyblue;
+}
+
+@keyframes popupAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
