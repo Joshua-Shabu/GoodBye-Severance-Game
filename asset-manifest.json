@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/GoodBye-Severance-Game/static/css/main.83463f82.css",
-    "main.js": "/GoodBye-Severance-Game/static/js/main.ce9849bd.js",
+    "main.js": "/GoodBye-Severance-Game/static/js/main.32813057.js",
     "static/js/239.5725eea0.chunk.js": "/GoodBye-Severance-Game/static/js/239.5725eea0.chunk.js",
     "static/js/213.ad4f6f78.chunk.js": "/GoodBye-Severance-Game/static/js/213.ad4f6f78.chunk.js",
     "static/js/732.b31af9a4.chunk.js": "/GoodBye-Severance-Game/static/js/732.b31af9a4.chunk.js",
     "static/media/TumblrHeader.jpg": "/GoodBye-Severance-Game/static/media/TumblrHeader.60248427d2e2f26702ad.jpg",
     "index.html": "/GoodBye-Severance-Game/index.html",
     "main.83463f82.css.map": "/GoodBye-Severance-Game/static/css/main.83463f82.css.map",
-    "main.ce9849bd.js.map": "/GoodBye-Severance-Game/static/js/main.ce9849bd.js.map",
+    "main.32813057.js.map": "/GoodBye-Severance-Game/static/js/main.32813057.js.map",
     "239.5725eea0.chunk.js.map": "/GoodBye-Severance-Game/static/js/239.5725eea0.chunk.js.map",
     "213.ad4f6f78.chunk.js.map": "/GoodBye-Severance-Game/static/js/213.ad4f6f78.chunk.js.map",
     "732.b31af9a4.chunk.js.map": "/GoodBye-Severance-Game/static/js/732.b31af9a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.83463f82.css",
-    "static/js/main.ce9849bd.js"
+    "static/js/main.32813057.js"
   ]
 }
