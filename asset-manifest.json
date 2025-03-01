@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/GoodBye-Severance-Game/static/css/main.83463f82.css",
-    "main.js": "/GoodBye-Severance-Game/static/js/main.b4353875.js",
-    "static/js/239.5725eea0.chunk.js": "/GoodBye-Severance-Game/static/js/239.5725eea0.chunk.js",
-    "static/js/213.ad4f6f78.chunk.js": "/GoodBye-Severance-Game/static/js/213.ad4f6f78.chunk.js",
-    "static/js/732.0c483af0.chunk.js": "/GoodBye-Severance-Game/static/js/732.0c483af0.chunk.js",
-    "static/media/TumblrHeader.jpg": "/GoodBye-Severance-Game/static/media/TumblrHeader.60248427d2e2f26702ad.jpg",
-    "index.html": "/GoodBye-Severance-Game/index.html",
-    "main.83463f82.css.map": "/GoodBye-Severance-Game/static/css/main.83463f82.css.map",
-    "main.b4353875.js.map": "/GoodBye-Severance-Game/static/js/main.b4353875.js.map",
-    "239.5725eea0.chunk.js.map": "/GoodBye-Severance-Game/static/js/239.5725eea0.chunk.js.map",
-    "213.ad4f6f78.chunk.js.map": "/GoodBye-Severance-Game/static/js/213.ad4f6f78.chunk.js.map",
-    "732.0c483af0.chunk.js.map": "/GoodBye-Severance-Game/static/js/732.0c483af0.chunk.js.map"
+    "main.css": "/static/css/main.5e992193.css",
+    "main.js": "/static/js/main.2ce56a27.js",
+    "static/js/239.5725eea0.chunk.js": "/static/js/239.5725eea0.chunk.js",
+    "static/js/213.ad4f6f78.chunk.js": "/static/js/213.ad4f6f78.chunk.js",
+    "static/js/732.0c483af0.chunk.js": "/static/js/732.0c483af0.chunk.js",
+    "static/media/TumblrHeader.jpg": "/static/media/TumblrHeader.60248427d2e2f26702ad.jpg",
+    "index.html": "/index.html",
+    "main.5e992193.css.map": "/static/css/main.5e992193.css.map",
+    "main.2ce56a27.js.map": "/static/js/main.2ce56a27.js.map",
+    "239.5725eea0.chunk.js.map": "/static/js/239.5725eea0.chunk.js.map",
+    "213.ad4f6f78.chunk.js.map": "/static/js/213.ad4f6f78.chunk.js.map",
+    "732.0c483af0.chunk.js.map": "/static/js/732.0c483af0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83463f82.css",
-    "static/js/main.b4353875.js"
+    "static/css/main.5e992193.css",
+    "static/js/main.2ce56a27.js"
   ]
 }
